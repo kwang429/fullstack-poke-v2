@@ -22,6 +22,21 @@ app.get("/api/pokemon", (req, res) => {
   });
 });
 
+app.get("/api/types", (req, res) => {
+  db.getAllTypes((err, data) => {
+    if (err) {
+      console.log(err);
+      res.status(404).send("error retrieving types");
+    } else {
+      res.status(200).send(data);
+    }
+  });
+});
+
+app.put("/api/pokemon/:id", (req, res) => {
+  res.status(202).send('werkin')
+})
+
 app.listen(PORT, () => {
   console.log(`listening on port ${PORT}`);
 });

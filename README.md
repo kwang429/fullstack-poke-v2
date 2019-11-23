@@ -16,6 +16,7 @@
 
 ### Step 3
 - Add the ability to add a type to your pokemon
+- THIS IS A LOT OF
 
 
 ### EXTRA
