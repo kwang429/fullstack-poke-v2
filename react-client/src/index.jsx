@@ -9,11 +9,6 @@ class App extends React.Component {
     };
   }
 
-  changeorder(order) {
-    this.setState({
-      show: order
-    });
-  }
 
   render() {
     return (
