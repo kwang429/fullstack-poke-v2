@@ -15,10 +15,12 @@
 - Refactor your client to dynamically render using the information from your server
 
 ### Step 3
-- Add the ability to add a type to your pokemon
+- Add the ability to update the name of your pokemon
+- Add the ability to delete a pokemon
 
 ### EXTRA
 - Add the ability to view only one type of pokemon
+- Add the ability to change the type of a pokemon
 - Add the ability to sort your list by name
 
 
