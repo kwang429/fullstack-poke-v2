@@ -9,17 +9,18 @@ class App extends React.Component {
     this.state = {
       pokemon: []
     };
+    this.getPokemon = this.getPokemon.bind(this);
   }
 
-  changeorder(order) {
-    this.setState({
-      show: order
-    });
-  }
+
 
   getPokemon() {
     axios.get('api/pokemon')
-    .then(({data}) => console.log(data))
+    .then(({data}) => {
+      this.setState({
+        pokemon: data
+      })
+    })
     .catch((err) => console.log(err));
   }
 
@@ -31,7 +32,7 @@ class App extends React.Component {
     return (
       <div>
         <h1>Pokemon!</h1>
-        <PokeList />
+        <PokeList pokemon={this.state.pokemon}/>
       </div>
     );
   }
