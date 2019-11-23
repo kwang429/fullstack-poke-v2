@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import PokeList from "./components/PokeList.jsx";
+import axios from 'axios';
 
 class App extends React.Component {
   constructor(props) {
@@ -13,6 +14,16 @@ class App extends React.Component {
     this.setState({
       show: order
     });
+  }
+
+  getPokemon() {
+    axios.get('api/pokemon')
+    .then(({data}) => console.log(data))
+    .catch((err) => console.log(err));
+  }
+
+  componentDidMount() {
+    this.getPokemon();
   }
 
   render() {
