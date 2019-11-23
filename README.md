@@ -3,7 +3,7 @@
 ## How to run this app
 - run the sql file to populate your database
 - npm install
-- npm run react-dev to start your webpack
+- npm run build:dev to start your webpack
 - npm run start:dev to begin server
 - go to localhost:3000 in browser
 
