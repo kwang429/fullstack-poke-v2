@@ -17,6 +17,7 @@
 ### Step 3
 - Add the ability to add a type to your pokemon
 
+
 ### EXTRA
 - Add the ability to view only one type of pokemon
 - Add the ability to sort your list by name
