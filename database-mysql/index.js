@@ -3,10 +3,10 @@ const mysqlConfig = require('./config.js');
 
 const connection = mysql.createConnection(mysqlConfig);
 
-const getAllTransactions = function(callback) {
+const getAllPokemon= function(callback) {
   // TODO - your code here!
 };
 
 module.exports = {
-  getAllTransactions
+  getAllPokemon
 };
